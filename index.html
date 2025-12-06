@@ -17,7 +17,7 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
-        <img src="logo.png" height="50px" width="50px" alt="">
+        <img src="assets/logo.png" height="50px" width="50px" alt="">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#f0f0f0;"></i></span>
       </button>
@@ -34,11 +34,11 @@
 
   <!-- Hero Section -->
   <header class="hero" id="home">
-    <img src="shrijan.jpg" alt="">
+    <img src="assets/shrijan.jpg" alt="">
     <h1>Hi, I'm Shrijan Shrestha</h1>
     <p class="lead">Backend Developer | Node.js</p>
     <div class="mt-3">
-      <a href="Shrijan-Shrestha-cv.pdf" download class="btn btn-custom me-2">Download Resume</a>
+      <a href="assets/Shrijan-Shrestha-cv.pdf" download class="btn btn-custom me-2">Download Resume</a>
       <a href="#contact" class="btn btn-outline-light">Contact Me</a>
     </div>
   </header>
@@ -48,7 +48,7 @@
   <div class="row g-4 align-items-center">
     <!-- Profile Image -->
     <div class="col-md-4 text-center">
-      <img src="shrijan.jpg" alt="Shrijan Shrestha" class="img-fluid rounded w-75">
+      <img src="assets/shrijan.jpg" alt="Shrijan Shrestha" class="img-fluid rounded w-75">
     </div>
 
     <!-- About Content -->
@@ -117,15 +117,15 @@
     <h2 class="section-title">Contact Me</h2>
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <form>
+        <form name="contact" method="POST" netlify>
           <div class="mb-3">
-            <input type="text" class="form-control" placeholder="Your Name">
+            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
           </div>
           <div class="mb-3">
-            <input type="email" class="form-control" placeholder="Email Address">
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required>
           </div>
           <div class="mb-3">
-            <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+            <textarea class="form-control" name="message" rows="4" placeholder="Message" required></textarea>
           </div>
           <button type="submit" class="btn btn-custom w-100">Send Message</button>
         </form>
