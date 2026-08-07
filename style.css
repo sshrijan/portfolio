@@ -87,9 +87,37 @@ section {
 .social-links a:hover {
   color: #1db954;
 }
+
+
+.section-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  letter-spacing: 0.5px;
+}
+
+.section-title span {
+  color: #0d6efd; /* or your accent color */
+  margin-right: 6px;
+}
+
+.skill-item {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+  align-items: baseline;
+}
+
+.skill-name {
+  font-weight: 600;
+  min-width: 90px;
+}
+
+
 /* Footer */
 footer {
   text-align: center;
   padding: 30px 0;
   background-color: #1e1e1e;
 }
+
